@@ -1,5 +1,5 @@
 # sqoop exercise 09231 younghun knag 강영훈
-## 1
+## [1]
 
 1-1.catch column
 sqoop eval \
@@ -23,8 +23,7 @@ sqoop eval \
 | modified             | datetime             | NO  |     | (null)               |                      | 
 ---------------------------------------------------------------------------------------------------------
 
-
-1-2.
+## 1-2.
 sqoop import \
 --connect jdbc:mysql://localhost/loudacre \
 --username training --password training \
