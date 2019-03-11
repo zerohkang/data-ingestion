@@ -60,4 +60,3 @@ sqoop import \
 --target-dir /loudacre/accounts/CA \
 --as-parquetfile -z
 ## 3.end
-# .end
