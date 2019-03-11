@@ -1,4 +1,6 @@
-# sqoop exercise 09231 younghun knag 강영훈
+## sqoop exercise 09231 younghun knag 강영훈
+
+
 ## 1-1.
 catch column
 sqoop eval \
