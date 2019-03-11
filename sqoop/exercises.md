@@ -1,5 +1,5 @@
 ## sqoop exercise 09231 younghun knag 강영훈
-
+## .end
 
 ## 1-1.
 catch column
