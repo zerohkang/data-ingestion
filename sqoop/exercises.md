@@ -1,7 +1,6 @@
 # sqoop exercise 09231 younghun knag 강영훈
-## [1]
-
-1-1.catch column
+## 1-1.
+catch column
 sqoop eval \
 --connect jdbc:mysql://localhost/loudacre \
 --username training --password training \
