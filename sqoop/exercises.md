@@ -1,7 +1,8 @@
-#sqoop exercise 09231 younghun knag 강영훈
-##1
+## sqoop exercise 09231 younghun knag 강영훈
+## .end
 
-1-1.catch column
+## 1-1.
+catch column
 sqoop eval \
 --connect jdbc:mysql://localhost/loudacre \
 --username training --password training \
@@ -23,8 +24,7 @@ sqoop eval \
 | modified             | datetime             | NO  |     | (null)               |                      | 
 ---------------------------------------------------------------------------------------------------------
 
-
-1-2.
+## 1-2.
 sqoop import \
 --connect jdbc:mysql://localhost/loudacre \
 --username training --password training \
@@ -34,10 +34,10 @@ sqoop import \
 --as-textfile \
 
 
-##1.end
+## 1.end
 
 
-##2
+## 2
 
 2 
 sqoop import \
@@ -50,9 +50,9 @@ sqoop import \
 --compression-codec org.apache.hadoop.io.compress.SnappyCodec
 
 
-##2.end
+## 2.end
 
-##3
+## 3
 3 
 sqoop import \
 --connect jdbc:mysql://localhost/loudacre \
@@ -61,5 +61,4 @@ sqoop import \
 --where "state='CA'" \
 --target-dir /loudacre/accounts/CA \
 --as-parquetfile -z
-##3.end
-#.end
+## 3.end
