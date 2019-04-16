@@ -25,6 +25,7 @@ C. Filter out any records which do not parse correctly (hint: each record should
 
 Ans.
  #14개의 밸류를 가진 것만 필터링
+ 
  CorrectRDD = splitRDD.filter(lambda values: len(values) == 14)
 
 D. Extract the date (first field), model (second field), device ID (third field), and latitude and longitude (13th and 14th fields respectively).
