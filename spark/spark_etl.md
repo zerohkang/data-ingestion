@@ -9,7 +9,7 @@ Review the contents of the file $DEVDATA/devicestatus.txt. This file contains da
 A. Upload the devicestatus.txt file to HDFS.
 
 Ans. 
- #"/loudacre/devicestatus.txt" 파일 로드
+ #"/loudacre/devicestatus.txt" 파일 로드 \n
  devstatRDD = sc.textFile("/loudacre/devicestatus.txt")
 
 B. Determine which delimiter to use (hint: the character at position 19 is the first use of the delimiter).
