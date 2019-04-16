@@ -9,13 +9,15 @@ Review the contents of the file $DEVDATA/devicestatus.txt. This file contains da
 A. Upload the devicestatus.txt file to HDFS.
 
 Ans. 
- #"/loudacre/devicestatus.txt" 파일 로드 \n
+ #"/loudacre/devicestatus.txt" 파일 로드
+ 
  devstatRDD = sc.textFile("/loudacre/devicestatus.txt")
 
 B. Determine which delimiter to use (hint: the character at position 19 is the first use of the delimiter).
 
 Ans.
  #19번 밸류 이상인 값 필터링 및 19밸류 기준 split
+ 
  ftRDD = devstatRDD.filter(lambda line: len(line) > 20)
  splitRDD = ftRDD.map(lambda line: line.split(line[19:20]))
 
