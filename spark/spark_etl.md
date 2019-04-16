@@ -31,18 +31,21 @@ D. Extract the date (first field), model (second field), device ID (third field)
 
 Ans.
  #date, model, deviceID, latitude, longitude 만출력
+ 
  resultRDD = CorrectRDD.map(lambda values: (values[0], values[1], values[2], values[12], values[13]))
 
 E. The second field contains the device manufacturer and model name (such as Ronin S2). Split this field by spaces to separate the manufacturer from the model (for example, manufacturer Ronin, model S2). Keep just the manufacturer name.
 
 Ans.
  #모델에서 제조사만 표시
+ 
  resultRDD = CorrectRDD.map(lambda values: (values[0], values[1].split(' ')[0], values[2], values[12], values[13]))
 
 F. Save the extracted data to comma-delimited text files in the /loudacre/devicestatus_etl directory on HDFS.
 
 Ans.
- #, Delimiter로 텍스트 파일 저장
+ # , Delimiter로 텍스트 파일 저장
+ 
  resultRDD = CorrectRDD.map(lambda values: (values[0], values[1].split(' ')[0], values[2], values[12], values[13]))
 
 G. Confirm that the data in the file(s) was saved correctly.
